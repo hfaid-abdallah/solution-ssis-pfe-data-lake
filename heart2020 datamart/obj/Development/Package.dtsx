@@ -1,0 +1,1249 @@
+<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="6/17/2022 2:29:09 PM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="HFAID"
+  DTS:CreatorName="HFAID\abdal"
+  DTS:DTSID="{78C14A1A-E05F-4828-9BA4-308E880D8667}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="15.0.2000.170"
+  DTS:LocaleID="1036"
+  DTS:ObjectName="Package"
+  DTS:PackageType="5"
+  DTS:VersionBuild="2"
+  DTS:VersionGUID="{AF105B35-F125-4A03-AC53-062C3441F93E}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Gestionnaire de connexions de fichiers plats]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{B81F844A-380F-4870-992A-D6A5D84F4CAE}"
+      DTS:ObjectName="Gestionnaire de connexions de fichiers plats">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1036"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="C:\Users\abdal\OneDrive\Bureau\data lake\heart_2020_cleaned.csv\heart_2020_cleaned.csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="HeartDisease"
+              DTS:DTSID="{ACFAA0F6-A387-4422-9AD7-C77BC202A7D8}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="BMI"
+              DTS:DTSID="{EC60E112-E75B-46C2-B780-0DD73535CC53}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Smoking"
+              DTS:DTSID="{4DAE3C7B-7D4E-4D28-9F75-8D810FB7D7B7}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="AlcoholDrinking"
+              DTS:DTSID="{AB8A05A0-7A3F-4B4E-94E2-3D5DF7A9082D}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Stroke"
+              DTS:DTSID="{9D58D971-5EFA-4222-9086-2F8F27D9C6C3}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="PhysicalHealth"
+              DTS:DTSID="{736DC13A-C352-4182-82FE-BC9758D20BA0}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="MentalHealth"
+              DTS:DTSID="{EC79B8B4-9587-4D6C-AA85-322F6B4A878A}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="DiffWalking"
+              DTS:DTSID="{8A87AD3D-5DF0-45B3-A811-99810450724A}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Sex"
+              DTS:DTSID="{2437B87C-1A82-4FD3-974E-B52D3CDA58D3}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="AgeCategory"
+              DTS:DTSID="{F5907A80-98AB-4AFF-9D65-1C30BAB4ED86}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Race"
+              DTS:DTSID="{D942C957-D157-4EB6-8ABC-6D96D7AFA017}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Diabetic"
+              DTS:DTSID="{7DF95DF9-A609-45B3-99BE-47713050FDFE}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="PhysicalActivity"
+              DTS:DTSID="{39A0443D-047C-4719-89C5-F7D9F2841E17}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="GenHealth"
+              DTS:DTSID="{1F0E367F-EF0E-46D8-9AB3-6F05C7842A0B}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="SleepTime"
+              DTS:DTSID="{00BBD5AE-6036-45C1-AEB7-6E9F0FA259F1}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Asthma"
+              DTS:DTSID="{AC27E384-90AF-474B-8B9E-7FB23BE7B035}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="KidneyDisease"
+              DTS:DTSID="{750AF0BE-48A1-4B5E-A3BC-2FE43433AFA3}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="SkinCancer"
+              DTS:DTSID="{7E5F91D8-73EE-4267-9E61-81852FF8A74E}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[LocalHost.datamart_heart2020]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{FC52233E-2F4D-4086-8B19-015257853664}"
+      DTS:ObjectName="LocalHost.datamart_heart2020">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=.;Initial Catalog=datamart_heart2020;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:Variables />
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\Tâche de flux de données"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Tâche de flux de données"
+      DTS:DTSID="{17F239E4-5859-46F7-AC21-F6DA1B995B27}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Tâche de flux de données"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\Tâche de flux de données\Destination OLE DB"
+              componentClassID="Microsoft.OLEDBDestination"
+              contactInfo="Destination OLE DB;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Tous droits réservés; http://www.microsoft.com/sql/support;4"
+              description="Destination OLE DB"
+              name="Destination OLE DB"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="Nombre de secondes avant l'expiration d'une commande.  Une valeur égale à 0 indique un délai d'expiration infini."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Spécifie le nom de l'objet de base de données utilisé pour ouvrir un ensemble de lignes."
+                  name="OpenRowset">[dbo].[heart2020]</property>
+                <property
+                  dataType="System.String"
+                  description="Spécifie la variable contenant le nom de l'objet de base de données utilisé pour ouvrir un ensemble de lignes."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="Commande SQL à exécuter."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Spécifie la page de codes de la colonne à utiliser lorsque les informations de page de codes ne sont pas disponibles à partir de la source de données."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Force l'utilisation de la valeur de propriété DefaultCodePage lors de la description des données caractères."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Spécifie le mode utilisé pour accéder à la base de données."
+                  name="AccessMode"
+                  typeConverter="AccessMode">0</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indique si les valeurs fournies pour les colonnes d'identité seront copiées à la destination. Si la valeur est définie à False, les valeurs des colonnes d'identité seront générées automatiquement à la destination. Ne s'applique que si le chargement rapide est activé."
+                  name="FastLoadKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indique si les colonnes contenant la valeur NULL auront cette valeur NULL copiée à la destination. Si la valeur est définie à False, les colonnes contenant la valeur NULL auront leurs valeurs par défaut insérées à la destination. Ne s'applique que si le chargement rapide est activé."
+                  name="FastLoadKeepNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Spécifie les options à utiliser avec le chargement rapide.  Ne s'applique que si le chargement rapide est activé."
+                  name="FastLoadOptions"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Spécifie quand les validations sont émises pendant l'insertion des données.  Une valeur égale à 0 spécifie qu'une validation sera émise à la fin de l'insertion des données.  Ne s'applique que si le chargement rapide est activé."
+                  name="FastLoadMaxInsertCommitSize">2147483647</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Tâche de flux de données\Destination OLE DB.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[LocalHost.datamart_heart2020]"
+                  connectionManagerRefId="Package.ConnectionManagers[LocalHost.datamart_heart2020]"
+                  description="Connexion OLE DB en cours d'exécution utilisée pour accéder à la base de données."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Tâche de flux de données\Destination OLE DB.Inputs[Entrée de destination OLE DB]"
+                  errorOrTruncationOperation="Insérer"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="Entrée de destination OLE DB">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Tâche de flux de données\Destination OLE DB.Inputs[Entrée de destination OLE DB].Columns[HeartDisease]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="HeartDisease"
+                      externalMetadataColumnId="Package\Tâche de flux de données\Destination OLE DB.Inputs[Entrée de destination OLE DB].ExternalColumns[HeartDisease]"
+                      lineageId="Package\Tâche de flux de données\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[HeartDisease]" />
+                    <inputColumn
+                      refId="Package\Tâche de flux de données\Destination OLE DB.Inputs[Entrée de destination OLE DB].Columns[BMI]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="BMI"
+                      externalMetadataColumnId="Package\Tâche de flux de données\Destination OLE DB.Inputs[Entrée de destination OLE DB].ExternalColumns[BMI]"
+                      lineageId="Package\Tâche de flux de données\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[BMI]" />
+                    <inputColumn
+                      refId="Package\Tâche de flux de données\Destination OLE DB.Inputs[Entrée de destination OLE DB].Columns[Smoking]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Smoking"
+                      externalMetadataColumnId="Package\Tâche de flux de données\Destination OLE DB.Inputs[Entrée de destination OLE DB].ExternalColumns[Smoking]"
+                      lineageId="Package\Tâche de flux de données\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[Smoking]" />
+                    <inputColumn
+                      refId="Package\Tâche de flux de données\Destination OLE DB.Inputs[Entrée de destination OLE DB].Columns[AlcoholDrinking]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="AlcoholDrinking"
+                      externalMetadataColumnId="Package\Tâche de flux de données\Destination OLE DB.Inputs[Entrée de destination OLE DB].ExternalColumns[AlcoholDrinking]"
+                      lineageId="Package\Tâche de flux de données\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[AlcoholDrinking]" />
+                    <inputColumn
+                      refId="Package\Tâche de flux de données\Destination OLE DB.Inputs[Entrée de destination OLE DB].Columns[Stroke]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Stroke"
+                      externalMetadataColumnId="Package\Tâche de flux de données\Destination OLE DB.Inputs[Entrée de destination OLE DB].ExternalColumns[Stroke]"
+                      lineageId="Package\Tâche de flux de données\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[Stroke]" />
+                    <inputColumn
+                      refId="Package\Tâche de flux de données\Destination OLE DB.Inputs[Entrée de destination OLE DB].Columns[PhysicalHealth]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="PhysicalHealth"
+                      externalMetadataColumnId="Package\Tâche de flux de données\Destination OLE DB.Inputs[Entrée de destination OLE DB].ExternalColumns[PhysicalHealth]"
+                      lineageId="Package\Tâche de flux de données\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[PhysicalHealth]" />
+                    <inputColumn
+                      refId="Package\Tâche de flux de données\Destination OLE DB.Inputs[Entrée de destination OLE DB].Columns[MentalHealth]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="MentalHealth"
+                      externalMetadataColumnId="Package\Tâche de flux de données\Destination OLE DB.Inputs[Entrée de destination OLE DB].ExternalColumns[MentalHealth]"
+                      lineageId="Package\Tâche de flux de données\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[MentalHealth]" />
+                    <inputColumn
+                      refId="Package\Tâche de flux de données\Destination OLE DB.Inputs[Entrée de destination OLE DB].Columns[DiffWalking]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="DiffWalking"
+                      externalMetadataColumnId="Package\Tâche de flux de données\Destination OLE DB.Inputs[Entrée de destination OLE DB].ExternalColumns[DiffWalking]"
+                      lineageId="Package\Tâche de flux de données\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[DiffWalking]" />
+                    <inputColumn
+                      refId="Package\Tâche de flux de données\Destination OLE DB.Inputs[Entrée de destination OLE DB].Columns[Sex]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Sex"
+                      externalMetadataColumnId="Package\Tâche de flux de données\Destination OLE DB.Inputs[Entrée de destination OLE DB].ExternalColumns[Sex]"
+                      lineageId="Package\Tâche de flux de données\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[Sex]" />
+                    <inputColumn
+                      refId="Package\Tâche de flux de données\Destination OLE DB.Inputs[Entrée de destination OLE DB].Columns[AgeCategory]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="AgeCategory"
+                      externalMetadataColumnId="Package\Tâche de flux de données\Destination OLE DB.Inputs[Entrée de destination OLE DB].ExternalColumns[AgeCategory]"
+                      lineageId="Package\Tâche de flux de données\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[AgeCategory]" />
+                    <inputColumn
+                      refId="Package\Tâche de flux de données\Destination OLE DB.Inputs[Entrée de destination OLE DB].Columns[Race]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Race"
+                      externalMetadataColumnId="Package\Tâche de flux de données\Destination OLE DB.Inputs[Entrée de destination OLE DB].ExternalColumns[Race]"
+                      lineageId="Package\Tâche de flux de données\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[Race]" />
+                    <inputColumn
+                      refId="Package\Tâche de flux de données\Destination OLE DB.Inputs[Entrée de destination OLE DB].Columns[Diabetic]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Diabetic"
+                      externalMetadataColumnId="Package\Tâche de flux de données\Destination OLE DB.Inputs[Entrée de destination OLE DB].ExternalColumns[Diabetic]"
+                      lineageId="Package\Tâche de flux de données\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[Diabetic]" />
+                    <inputColumn
+                      refId="Package\Tâche de flux de données\Destination OLE DB.Inputs[Entrée de destination OLE DB].Columns[PhysicalActivity]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="PhysicalActivity"
+                      externalMetadataColumnId="Package\Tâche de flux de données\Destination OLE DB.Inputs[Entrée de destination OLE DB].ExternalColumns[PhysicalActivity]"
+                      lineageId="Package\Tâche de flux de données\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[PhysicalActivity]" />
+                    <inputColumn
+                      refId="Package\Tâche de flux de données\Destination OLE DB.Inputs[Entrée de destination OLE DB].Columns[GenHealth]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="GenHealth"
+                      externalMetadataColumnId="Package\Tâche de flux de données\Destination OLE DB.Inputs[Entrée de destination OLE DB].ExternalColumns[GenHealth]"
+                      lineageId="Package\Tâche de flux de données\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[GenHealth]" />
+                    <inputColumn
+                      refId="Package\Tâche de flux de données\Destination OLE DB.Inputs[Entrée de destination OLE DB].Columns[SleepTime]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="SleepTime"
+                      externalMetadataColumnId="Package\Tâche de flux de données\Destination OLE DB.Inputs[Entrée de destination OLE DB].ExternalColumns[SleepTime]"
+                      lineageId="Package\Tâche de flux de données\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[SleepTime]" />
+                    <inputColumn
+                      refId="Package\Tâche de flux de données\Destination OLE DB.Inputs[Entrée de destination OLE DB].Columns[Asthma]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Asthma"
+                      externalMetadataColumnId="Package\Tâche de flux de données\Destination OLE DB.Inputs[Entrée de destination OLE DB].ExternalColumns[Asthma]"
+                      lineageId="Package\Tâche de flux de données\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[Asthma]" />
+                    <inputColumn
+                      refId="Package\Tâche de flux de données\Destination OLE DB.Inputs[Entrée de destination OLE DB].Columns[KidneyDisease]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="KidneyDisease"
+                      externalMetadataColumnId="Package\Tâche de flux de données\Destination OLE DB.Inputs[Entrée de destination OLE DB].ExternalColumns[KidneyDisease]"
+                      lineageId="Package\Tâche de flux de données\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[KidneyDisease]" />
+                    <inputColumn
+                      refId="Package\Tâche de flux de données\Destination OLE DB.Inputs[Entrée de destination OLE DB].Columns[SkinCancer]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="SkinCancer"
+                      externalMetadataColumnId="Package\Tâche de flux de données\Destination OLE DB.Inputs[Entrée de destination OLE DB].ExternalColumns[SkinCancer]"
+                      lineageId="Package\Tâche de flux de données\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[SkinCancer]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Tâche de flux de données\Destination OLE DB.Inputs[Entrée de destination OLE DB].ExternalColumns[HeartDisease]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="HeartDisease" />
+                    <externalMetadataColumn
+                      refId="Package\Tâche de flux de données\Destination OLE DB.Inputs[Entrée de destination OLE DB].ExternalColumns[BMI]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="BMI" />
+                    <externalMetadataColumn
+                      refId="Package\Tâche de flux de données\Destination OLE DB.Inputs[Entrée de destination OLE DB].ExternalColumns[Smoking]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Smoking" />
+                    <externalMetadataColumn
+                      refId="Package\Tâche de flux de données\Destination OLE DB.Inputs[Entrée de destination OLE DB].ExternalColumns[AlcoholDrinking]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="AlcoholDrinking" />
+                    <externalMetadataColumn
+                      refId="Package\Tâche de flux de données\Destination OLE DB.Inputs[Entrée de destination OLE DB].ExternalColumns[Stroke]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Stroke" />
+                    <externalMetadataColumn
+                      refId="Package\Tâche de flux de données\Destination OLE DB.Inputs[Entrée de destination OLE DB].ExternalColumns[PhysicalHealth]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="PhysicalHealth" />
+                    <externalMetadataColumn
+                      refId="Package\Tâche de flux de données\Destination OLE DB.Inputs[Entrée de destination OLE DB].ExternalColumns[MentalHealth]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="MentalHealth" />
+                    <externalMetadataColumn
+                      refId="Package\Tâche de flux de données\Destination OLE DB.Inputs[Entrée de destination OLE DB].ExternalColumns[DiffWalking]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="DiffWalking" />
+                    <externalMetadataColumn
+                      refId="Package\Tâche de flux de données\Destination OLE DB.Inputs[Entrée de destination OLE DB].ExternalColumns[Sex]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Sex" />
+                    <externalMetadataColumn
+                      refId="Package\Tâche de flux de données\Destination OLE DB.Inputs[Entrée de destination OLE DB].ExternalColumns[AgeCategory]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="AgeCategory" />
+                    <externalMetadataColumn
+                      refId="Package\Tâche de flux de données\Destination OLE DB.Inputs[Entrée de destination OLE DB].ExternalColumns[Race]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Race" />
+                    <externalMetadataColumn
+                      refId="Package\Tâche de flux de données\Destination OLE DB.Inputs[Entrée de destination OLE DB].ExternalColumns[Diabetic]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Diabetic" />
+                    <externalMetadataColumn
+                      refId="Package\Tâche de flux de données\Destination OLE DB.Inputs[Entrée de destination OLE DB].ExternalColumns[PhysicalActivity]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="PhysicalActivity" />
+                    <externalMetadataColumn
+                      refId="Package\Tâche de flux de données\Destination OLE DB.Inputs[Entrée de destination OLE DB].ExternalColumns[GenHealth]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="GenHealth" />
+                    <externalMetadataColumn
+                      refId="Package\Tâche de flux de données\Destination OLE DB.Inputs[Entrée de destination OLE DB].ExternalColumns[SleepTime]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="SleepTime" />
+                    <externalMetadataColumn
+                      refId="Package\Tâche de flux de données\Destination OLE DB.Inputs[Entrée de destination OLE DB].ExternalColumns[Asthma]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Asthma" />
+                    <externalMetadataColumn
+                      refId="Package\Tâche de flux de données\Destination OLE DB.Inputs[Entrée de destination OLE DB].ExternalColumns[KidneyDisease]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="KidneyDisease" />
+                    <externalMetadataColumn
+                      refId="Package\Tâche de flux de données\Destination OLE DB.Inputs[Entrée de destination OLE DB].ExternalColumns[SkinCancer]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="SkinCancer" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Tâche de flux de données\Destination OLE DB.Outputs[Sortie d'erreur de destination OLE DB]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Sortie d'erreur de destination OLE DB"
+                  synchronousInputId="Package\Tâche de flux de données\Destination OLE DB.Inputs[Entrée de destination OLE DB]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Tâche de flux de données\Destination OLE DB.Outputs[Sortie d'erreur de destination OLE DB].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Tâche de flux de données\Destination OLE DB.Outputs[Sortie d'erreur de destination OLE DB].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Tâche de flux de données\Destination OLE DB.Outputs[Sortie d'erreur de destination OLE DB].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Tâche de flux de données\Destination OLE DB.Outputs[Sortie d'erreur de destination OLE DB].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Tâche de flux de données\Source du fichier plat"
+              componentClassID="Microsoft.FlatFileSource"
+              contactInfo="Source du fichier plat;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Tous droits réservés; http://www.microsoft.com/sql/support;1"
+              description="Source du fichier plat"
+              localeId="1036"
+              name="Source du fichier plat"
+              usesDispositions="true"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Spécifie si les colonnes dont la longueur est zéro sont traitées comme des valeurs NULL."
+                  name="RetainNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Spécifie le nom d'une colonne de sortie contenant le nom du fichier. Si aucun nom n'est spécifié, aucune colonne de sortie contenant le nom du fichier ne sera générée."
+                  name="FileNameColumnName"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Tâche de flux de données\Source du fichier plat.Connections[FlatFileConnection]"
+                  connectionManagerID="Package.ConnectionManagers[Gestionnaire de connexions de fichiers plats]"
+                  connectionManagerRefId="Package.ConnectionManagers[Gestionnaire de connexions de fichiers plats]"
+                  name="FlatFileConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Tâche de flux de données\Source du fichier plat.Outputs[Sortie de source de fichier plat]"
+                  name="Sortie de source de fichier plat">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Tâche de flux de données\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[HeartDisease]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tâche de flux de données\Source du fichier plat.Outputs[Sortie de source de fichier plat].ExternalColumns[HeartDisease]"
+                      length="50"
+                      lineageId="Package\Tâche de flux de données\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[HeartDisease]"
+                      name="HeartDisease"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si la colonne utilise les routines d'analyse les plus rapides, avec des paramètres régionaux neutres."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si les données sont au format binaire."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Tâche de flux de données\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[BMI]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tâche de flux de données\Source du fichier plat.Outputs[Sortie de source de fichier plat].ExternalColumns[BMI]"
+                      length="50"
+                      lineageId="Package\Tâche de flux de données\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[BMI]"
+                      name="BMI"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si la colonne utilise les routines d'analyse les plus rapides, avec des paramètres régionaux neutres."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si les données sont au format binaire."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Tâche de flux de données\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[Smoking]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tâche de flux de données\Source du fichier plat.Outputs[Sortie de source de fichier plat].ExternalColumns[Smoking]"
+                      length="50"
+                      lineageId="Package\Tâche de flux de données\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[Smoking]"
+                      name="Smoking"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si la colonne utilise les routines d'analyse les plus rapides, avec des paramètres régionaux neutres."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si les données sont au format binaire."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Tâche de flux de données\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[AlcoholDrinking]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tâche de flux de données\Source du fichier plat.Outputs[Sortie de source de fichier plat].ExternalColumns[AlcoholDrinking]"
+                      length="50"
+                      lineageId="Package\Tâche de flux de données\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[AlcoholDrinking]"
+                      name="AlcoholDrinking"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si la colonne utilise les routines d'analyse les plus rapides, avec des paramètres régionaux neutres."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si les données sont au format binaire."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Tâche de flux de données\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[Stroke]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tâche de flux de données\Source du fichier plat.Outputs[Sortie de source de fichier plat].ExternalColumns[Stroke]"
+                      length="50"
+                      lineageId="Package\Tâche de flux de données\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[Stroke]"
+                      name="Stroke"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si la colonne utilise les routines d'analyse les plus rapides, avec des paramètres régionaux neutres."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si les données sont au format binaire."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Tâche de flux de données\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[PhysicalHealth]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tâche de flux de données\Source du fichier plat.Outputs[Sortie de source de fichier plat].ExternalColumns[PhysicalHealth]"
+                      length="50"
+                      lineageId="Package\Tâche de flux de données\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[PhysicalHealth]"
+                      name="PhysicalHealth"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si la colonne utilise les routines d'analyse les plus rapides, avec des paramètres régionaux neutres."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si les données sont au format binaire."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Tâche de flux de données\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[MentalHealth]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tâche de flux de données\Source du fichier plat.Outputs[Sortie de source de fichier plat].ExternalColumns[MentalHealth]"
+                      length="50"
+                      lineageId="Package\Tâche de flux de données\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[MentalHealth]"
+                      name="MentalHealth"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si la colonne utilise les routines d'analyse les plus rapides, avec des paramètres régionaux neutres."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si les données sont au format binaire."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Tâche de flux de données\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[DiffWalking]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tâche de flux de données\Source du fichier plat.Outputs[Sortie de source de fichier plat].ExternalColumns[DiffWalking]"
+                      length="50"
+                      lineageId="Package\Tâche de flux de données\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[DiffWalking]"
+                      name="DiffWalking"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si la colonne utilise les routines d'analyse les plus rapides, avec des paramètres régionaux neutres."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si les données sont au format binaire."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Tâche de flux de données\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[Sex]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tâche de flux de données\Source du fichier plat.Outputs[Sortie de source de fichier plat].ExternalColumns[Sex]"
+                      length="50"
+                      lineageId="Package\Tâche de flux de données\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[Sex]"
+                      name="Sex"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si la colonne utilise les routines d'analyse les plus rapides, avec des paramètres régionaux neutres."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si les données sont au format binaire."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Tâche de flux de données\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[AgeCategory]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tâche de flux de données\Source du fichier plat.Outputs[Sortie de source de fichier plat].ExternalColumns[AgeCategory]"
+                      length="50"
+                      lineageId="Package\Tâche de flux de données\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[AgeCategory]"
+                      name="AgeCategory"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si la colonne utilise les routines d'analyse les plus rapides, avec des paramètres régionaux neutres."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si les données sont au format binaire."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Tâche de flux de données\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[Race]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tâche de flux de données\Source du fichier plat.Outputs[Sortie de source de fichier plat].ExternalColumns[Race]"
+                      length="50"
+                      lineageId="Package\Tâche de flux de données\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[Race]"
+                      name="Race"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si la colonne utilise les routines d'analyse les plus rapides, avec des paramètres régionaux neutres."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si les données sont au format binaire."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Tâche de flux de données\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[Diabetic]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tâche de flux de données\Source du fichier plat.Outputs[Sortie de source de fichier plat].ExternalColumns[Diabetic]"
+                      length="50"
+                      lineageId="Package\Tâche de flux de données\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[Diabetic]"
+                      name="Diabetic"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si la colonne utilise les routines d'analyse les plus rapides, avec des paramètres régionaux neutres."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si les données sont au format binaire."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Tâche de flux de données\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[PhysicalActivity]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tâche de flux de données\Source du fichier plat.Outputs[Sortie de source de fichier plat].ExternalColumns[PhysicalActivity]"
+                      length="50"
+                      lineageId="Package\Tâche de flux de données\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[PhysicalActivity]"
+                      name="PhysicalActivity"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si la colonne utilise les routines d'analyse les plus rapides, avec des paramètres régionaux neutres."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si les données sont au format binaire."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Tâche de flux de données\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[GenHealth]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tâche de flux de données\Source du fichier plat.Outputs[Sortie de source de fichier plat].ExternalColumns[GenHealth]"
+                      length="50"
+                      lineageId="Package\Tâche de flux de données\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[GenHealth]"
+                      name="GenHealth"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si la colonne utilise les routines d'analyse les plus rapides, avec des paramètres régionaux neutres."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si les données sont au format binaire."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Tâche de flux de données\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[SleepTime]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tâche de flux de données\Source du fichier plat.Outputs[Sortie de source de fichier plat].ExternalColumns[SleepTime]"
+                      length="50"
+                      lineageId="Package\Tâche de flux de données\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[SleepTime]"
+                      name="SleepTime"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si la colonne utilise les routines d'analyse les plus rapides, avec des paramètres régionaux neutres."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si les données sont au format binaire."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Tâche de flux de données\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[Asthma]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tâche de flux de données\Source du fichier plat.Outputs[Sortie de source de fichier plat].ExternalColumns[Asthma]"
+                      length="50"
+                      lineageId="Package\Tâche de flux de données\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[Asthma]"
+                      name="Asthma"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si la colonne utilise les routines d'analyse les plus rapides, avec des paramètres régionaux neutres."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si les données sont au format binaire."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Tâche de flux de données\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[KidneyDisease]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tâche de flux de données\Source du fichier plat.Outputs[Sortie de source de fichier plat].ExternalColumns[KidneyDisease]"
+                      length="50"
+                      lineageId="Package\Tâche de flux de données\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[KidneyDisease]"
+                      name="KidneyDisease"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si la colonne utilise les routines d'analyse les plus rapides, avec des paramètres régionaux neutres."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si les données sont au format binaire."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Tâche de flux de données\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[SkinCancer]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tâche de flux de données\Source du fichier plat.Outputs[Sortie de source de fichier plat].ExternalColumns[SkinCancer]"
+                      length="50"
+                      lineageId="Package\Tâche de flux de données\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[SkinCancer]"
+                      name="SkinCancer"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si la colonne utilise les routines d'analyse les plus rapides, avec des paramètres régionaux neutres."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si les données sont au format binaire."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Tâche de flux de données\Source du fichier plat.Outputs[Sortie de source de fichier plat].ExternalColumns[HeartDisease]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="HeartDisease" />
+                    <externalMetadataColumn
+                      refId="Package\Tâche de flux de données\Source du fichier plat.Outputs[Sortie de source de fichier plat].ExternalColumns[BMI]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="BMI" />
+                    <externalMetadataColumn
+                      refId="Package\Tâche de flux de données\Source du fichier plat.Outputs[Sortie de source de fichier plat].ExternalColumns[Smoking]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Smoking" />
+                    <externalMetadataColumn
+                      refId="Package\Tâche de flux de données\Source du fichier plat.Outputs[Sortie de source de fichier plat].ExternalColumns[AlcoholDrinking]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="AlcoholDrinking" />
+                    <externalMetadataColumn
+                      refId="Package\Tâche de flux de données\Source du fichier plat.Outputs[Sortie de source de fichier plat].ExternalColumns[Stroke]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Stroke" />
+                    <externalMetadataColumn
+                      refId="Package\Tâche de flux de données\Source du fichier plat.Outputs[Sortie de source de fichier plat].ExternalColumns[PhysicalHealth]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="PhysicalHealth" />
+                    <externalMetadataColumn
+                      refId="Package\Tâche de flux de données\Source du fichier plat.Outputs[Sortie de source de fichier plat].ExternalColumns[MentalHealth]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="MentalHealth" />
+                    <externalMetadataColumn
+                      refId="Package\Tâche de flux de données\Source du fichier plat.Outputs[Sortie de source de fichier plat].ExternalColumns[DiffWalking]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="DiffWalking" />
+                    <externalMetadataColumn
+                      refId="Package\Tâche de flux de données\Source du fichier plat.Outputs[Sortie de source de fichier plat].ExternalColumns[Sex]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Sex" />
+                    <externalMetadataColumn
+                      refId="Package\Tâche de flux de données\Source du fichier plat.Outputs[Sortie de source de fichier plat].ExternalColumns[AgeCategory]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="AgeCategory" />
+                    <externalMetadataColumn
+                      refId="Package\Tâche de flux de données\Source du fichier plat.Outputs[Sortie de source de fichier plat].ExternalColumns[Race]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Race" />
+                    <externalMetadataColumn
+                      refId="Package\Tâche de flux de données\Source du fichier plat.Outputs[Sortie de source de fichier plat].ExternalColumns[Diabetic]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Diabetic" />
+                    <externalMetadataColumn
+                      refId="Package\Tâche de flux de données\Source du fichier plat.Outputs[Sortie de source de fichier plat].ExternalColumns[PhysicalActivity]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="PhysicalActivity" />
+                    <externalMetadataColumn
+                      refId="Package\Tâche de flux de données\Source du fichier plat.Outputs[Sortie de source de fichier plat].ExternalColumns[GenHealth]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="GenHealth" />
+                    <externalMetadataColumn
+                      refId="Package\Tâche de flux de données\Source du fichier plat.Outputs[Sortie de source de fichier plat].ExternalColumns[SleepTime]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="SleepTime" />
+                    <externalMetadataColumn
+                      refId="Package\Tâche de flux de données\Source du fichier plat.Outputs[Sortie de source de fichier plat].ExternalColumns[Asthma]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Asthma" />
+                    <externalMetadataColumn
+                      refId="Package\Tâche de flux de données\Source du fichier plat.Outputs[Sortie de source de fichier plat].ExternalColumns[KidneyDisease]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="KidneyDisease" />
+                    <externalMetadataColumn
+                      refId="Package\Tâche de flux de données\Source du fichier plat.Outputs[Sortie de source de fichier plat].ExternalColumns[SkinCancer]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="SkinCancer" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Tâche de flux de données\Source du fichier plat.Outputs[Sortie d'erreur de source de fichier plat]"
+                  isErrorOut="true"
+                  name="Sortie d'erreur de source de fichier plat">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Tâche de flux de données\Source du fichier plat.Outputs[Sortie d'erreur de source de fichier plat].Columns[Colonne de sortie d'erreur de source de fichier plat]"
+                      codePage="1252"
+                      dataType="text"
+                      description="Colonne de sortie d'erreur de source de fichier plat"
+                      lineageId="Package\Tâche de flux de données\Source du fichier plat.Outputs[Sortie d'erreur de source de fichier plat].Columns[Colonne de sortie d'erreur de source de fichier plat]"
+                      name="Colonne de sortie d'erreur de source de fichier plat" />
+                    <outputColumn
+                      refId="Package\Tâche de flux de données\Source du fichier plat.Outputs[Sortie d'erreur de source de fichier plat].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Tâche de flux de données\Source du fichier plat.Outputs[Sortie d'erreur de source de fichier plat].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Tâche de flux de données\Source du fichier plat.Outputs[Sortie d'erreur de source de fichier plat].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Tâche de flux de données\Source du fichier plat.Outputs[Sortie d'erreur de source de fichier plat].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\Tâche de flux de données.Paths[Sortie de source de fichier plat]"
+              endId="Package\Tâche de flux de données\Destination OLE DB.Inputs[Entrée de destination OLE DB]"
+              name="Sortie de source de fichier plat"
+              startId="Package\Tâche de flux de données\Source du fichier plat.Outputs[Sortie de source de fichier plat]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--Cette section CDATA contient des informations sur la disposition du package. Elle comprend des informations telles que les coordonnées (x,y), la largeur et la hauteur.-->
+<!--Si vous modifiez manuellement cette section et commettez une erreur, vous pouvez la supprimer. -->
+<!--Le package pourra toujours se charger normalement, mais les informations de disposition précédente seront perdues et le concepteur réorganisera automatiquement les éléments sur l'aire de conception.-->
+<Objects
+  Version="8">
+  <!--Chaque nœud ci-dessous contiendra des propriétés qui n'affectent pas le comportement d'exécution.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
+        <NodeLayout
+          Size="200,41.6"
+          Id="Package\Tâche de flux de données"
+          TopLeft="35.5,35.5" />
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+  <TaskHost
+    design-time-name="Package\Tâche de flux de données">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="178.4,41.6"
+          Id="Package\Tâche de flux de données\Source du fichier plat"
+          TopLeft="180,67" />
+        <NodeLayout
+          Size="170.4,41.6"
+          Id="Package\Tâche de flux de données\Destination OLE DB"
+          TopLeft="280,220" />
+        <EdgeLayout
+          Id="Package\Tâche de flux de données.Paths[Sortie de source de fichier plat]"
+          TopLeft="269.2,108.6">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="96,111.4"
+              Start="0,0"
+              End="96,103.9">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,51.7" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,51.7"
+                    Point2="0,55.7"
+                    Point3="4,55.7" />
+                  <mssgle:LineSegment
+                    End="92,55.7" />
+                  <mssgle:CubicBezierSegment
+                    Point1="92,55.7"
+                    Point2="96,55.7"
+                    Point3="96,59.7" />
+                  <mssgle:LineSegment
+                    End="96,103.9" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Tâche de flux de données\Destination OLE DB">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>

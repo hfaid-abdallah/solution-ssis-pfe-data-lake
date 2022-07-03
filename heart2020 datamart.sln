@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32602.291
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{159641D6-6404-4A2A-AE62-294DE0FE8301}") = "heart2020 datamart", "heart2020 datamart\heart2020 datamart.dtproj", "{FFA585C2-A973-49B7-9AFF-E8F604EFDE10}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Development|Default = Development|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FFA585C2-A973-49B7-9AFF-E8F604EFDE10}.Development|Default.ActiveCfg = Development
+		{FFA585C2-A973-49B7-9AFF-E8F604EFDE10}.Development|Default.Build.0 = Development
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CDB9CFAA-5BF9-41A0-9BF5-FEB187349431}
+	EndGlobalSection
+EndGlobal
